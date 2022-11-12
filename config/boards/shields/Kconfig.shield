@@ -1,0 +1,5 @@
+config SHIELD_TINY18_LEFT
+	def_bool $(shields_list_contains,tiny18_left)
+
+config SHIELD_TINY18_RIGHT
+	def_bool $(shields_list_contains,tiny18_right)
