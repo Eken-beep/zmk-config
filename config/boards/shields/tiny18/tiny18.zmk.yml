@@ -1,0 +1,12 @@
+file_format: "1"
+id: tiny18
+name: Tiny18
+type: shield
+url: https://github.com/benvallack/zmk-config-card
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - tiny18_left
+  - tiny18_right
