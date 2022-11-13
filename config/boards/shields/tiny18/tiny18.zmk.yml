@@ -2,7 +2,7 @@ file_format: "1"
 id: tiny18
 name: Tiny18
 type: shield
-url: https://github.com/benvallack/zmk-config-card
+url: https://github.com/Eken-beep/zmk-config
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
