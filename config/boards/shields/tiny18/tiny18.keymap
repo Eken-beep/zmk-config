@@ -6,11 +6,19 @@
         compatible = "zmk,keymap";
 
         alpha1 { 
+            label = "Alpha 1";
             bindings = <
                         &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
                 &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
-                                  &kp BSPC &kp SPC   &kp RET & TAB
+                                  &kp BSPC &kp SPC   &lt AL2 RET &kp TAB
             >;
         };
+
+        alpha2 {
+            label = "Alpha 2";
+            bindings = <
+                        &kp J    &kp P   &kp K           &kp B   &kp DOT  &kp X
+                &kp Q   &kp V    &kp W   &kp M           &kp F   &kp COMM &kp Z &kp Y
+                                  &kp BSPC &kp SPC   &kp RET &kp TAB
     };
 };
