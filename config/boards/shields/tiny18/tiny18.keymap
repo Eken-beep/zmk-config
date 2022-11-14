@@ -10,3 +10,7 @@
                         &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
                 &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
                                   &kp BSPC &kp SPC   &kp RET & TAB
+            >;
+        };
+    };
+};
