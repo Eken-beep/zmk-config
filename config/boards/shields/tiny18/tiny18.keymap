@@ -9,7 +9,7 @@
             bindings = <
                         &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
                 &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
-                                &trans &trans       &lt AL2 SPACE &trans
+                                &trans &trans       &mo AL2 &trans
             >;
         };
 
