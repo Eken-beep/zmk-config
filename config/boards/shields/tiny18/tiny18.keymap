@@ -18,7 +18,7 @@
         bindings = <
                 &kp J    &kp P   &kp K           &kp B   &kp DOT  &kp X
         &kp Q   &kp V    &kp W   &kp M           &kp F   &kp COMM &kp Z &kp Y
-                          &kp BSPC &kp SPC   &trans    &kp TAB
+                          &trans &kp SPACE   &trans    &trans
         >;
         };
     };
