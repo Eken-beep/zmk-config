@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/keys.h>
+
 #define AL1 0
 #define AL2 1
 
@@ -9,7 +11,7 @@
         bindings = <
                 &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
         &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
-                        &trans &trans       &mo AL2 &trans
+                        &trans &trans       &mo 1 &trans
         >;
         };
 
