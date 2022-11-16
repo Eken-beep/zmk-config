@@ -1,7 +1,13 @@
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
 if SHIELD_TINY18_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "My Board"
+    default "Tiny 18"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
