@@ -1,9 +1,20 @@
+/*
+ *
+ *         &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
+ * &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
+ *                      &kp A &kp A       &mo 1 &trans
+ */
+
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 
 #define AL1 0
 #define AL2 1
+#define SY1 2
+#define SY2 3
+#define MOD 4
+#define NUM 5
 
 / { 
     keymap {
@@ -11,17 +22,33 @@
 
         alpha1 { 
         bindings = <
-                &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
-        &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
-                        &bt BT_CLR &bt BT_NXT       &mo 1 &trans
+                    &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
+        &mt LCTRL I &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &lt SY1 C
+                    &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
 
         alpha2 {
         bindings = <
-                &kp J    &kp P   &kp K           &kp B   &kp DOT   &kp X
-        &kp Q   &kp V    &kp W   &kp M           &kp F   &kp COMMA &kp Z &kp Y
-                          &trans &kp SPACE   &trans    &trans
+                    &kp J    &kp P   &kp K           &kp B   &kp DOT   &kp X
+        &mt LCTRL Q &kp V    &kp W   &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
+                      &kp LGUI &mt LSHFT BSPC     &trans    &trans
+        >;
+        };
+
+        sym1 {
+        bindings = <
+                     &kp AT   &kp SQT  &kp CARET       &kp DLLR   &kp MINUS &kp UNDER
+        &lt SY2 EXCL &kp AMPS &kp DQT  &kp STAR        &kp DQT    &kp EQUAL &kp PLUS &trans
+                                &trans &trans       &lt NUM DEL &kp RCTRL
+        >;
+        };
+
+        sym2 {
+        bindings = <
+               &kp AT &kp SQT  &kp CARET       &kp DLLR   &kp MINUS &kp UNDER
+        &trans &kp L  &kp DQT  &kp STAR        &kp DQT    &kp SQT   &kp PLUS &trans
+                           &trans &trans       &trans &trans
         >;
         };
     };
