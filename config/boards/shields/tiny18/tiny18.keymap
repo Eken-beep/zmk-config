@@ -32,7 +32,7 @@
         bindings = <
                     &kp J    &kp P   &kp K           &kp B   &kp DOT   &kp X
         &mt LCTRL Q &kp V    &kp W   &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
-                      &kp LGUI &mt LSHFT BSPC     &trans    &trans
+                      &kp LGUI &mt LSHFT BSPC     &trans    &bt BT_CLR
         >;
         };
 
