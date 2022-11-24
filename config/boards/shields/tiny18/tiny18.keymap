@@ -12,7 +12,7 @@
 #define AL1 0
 #define AL2 1
 #define SY1 2
-#define SY2 3
+#define BRC 3
 #define MOD 4
 #define NUM 5
 
@@ -22,9 +22,9 @@
 
         alpha1 { 
         bindings = <
-                    &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
-        &mt LCTRL I &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &lt SY1 C
-                    &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
+                    &lt NUM S &kp R   &kp T           &kp N   &kp E   &lt BRC A 
+        &mt LCTRL I &kp L     &kp G   &kp D           &kp H   &kp U   &kp O &lt SY1 C
+                    &kp LGUI  &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
 
@@ -38,17 +38,33 @@
 
         sym1 {
         bindings = <
-                     &kp AT   &kp SQT  &kp CARET       &kp DLLR   &kp MINUS &kp UNDER
-        &lt SY2 EXCL &kp AMPS &kp DQT  &kp STAR        &kp DQT    &kp EQUAL &kp PLUS &trans
-                                &trans &trans       &lt NUM DEL &kp RCTRL
+                     &kp AT   &kp SQT  &kp CARET       &kp DLLR &kp MINUS &kp EQUAL
+        &lt SY2 EXCL &kp AMPS &kp HASH &kp STAR        &kp SLSH &kp BSLH  &kp PRCNT &trans
+                         &kp LGUI &mt LSHFT SPACE       &lt NUM DEL &kp RCTRL
         >;
         };
 
-        sym2 {
+        bracket {
         bindings = <
-               &kp AT &kp SQT  &kp CARET       &kp DLLR   &kp MINUS &kp UNDER
-        &trans &kp L  &kp DQT  &kp STAR        &kp DQT    &kp SQT   &kp PLUS &trans
-                           &trans &trans       &trans &trans
+                 &kp SEMI  &kp LBKT  &kp LPAR      &kp RPAR   &kp RBKT &trans
+        &kp LBRC &kp COLOn &kp GRAVE &kp TIL       &kp TAB    &trans   &trans &kp RBRC
+                   &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
+        >;
+        };
+        
+        mod {
+        bindings = <
+                 &kp SEMI  &sk LALT  &kp DEL       &kp LEFT &kp DOWN &kp UP
+        &kp LBRC &kp COLON &kp GRAVE &kp TIL       &kp TAB  &trans   &trans &kp RIGHT
+                   &kp LGUI &mt LSHFT SPACE       &trans &trans
+        >;
+        };
+
+        number {
+        bindings = <
+                 &kp SEMI  &kp LBKT  &kp LPAR      &kp RPAR   &kp RBKT &trans
+        &kp LBRC &kp COLOn &kp GRAVE &kp TIL       &kp TAB    &trans   &trans &kp RBRC
+                   &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
     };
