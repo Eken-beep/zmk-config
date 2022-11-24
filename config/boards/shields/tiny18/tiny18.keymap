@@ -55,7 +55,7 @@
         mod {
         bindings = <
                  &kp SEMI  &sk LALT  &kp DEL       &kp LEFT &kp DOWN &kp UP
-        &kp LBRC &kp COLON &kp GRAVE &kp TIL       &kp TAB  &trans   &trans &kp RIGHT
+        &kp LBRC &kp COLON &kp GRAVE &trans        &kp TAB  &trans   &trans &kp RIGHT
                    &kp LGUI &mt LSHFT SPACE       &trans &trans
         >;
         };
