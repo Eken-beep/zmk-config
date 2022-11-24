@@ -47,7 +47,7 @@
         bracket {
         bindings = <
                  &kp SEMI  &kp LBKT  &kp LPAR      &kp RPAR   &kp RBKT &trans
-        &kp LBRC &kp COLOn &kp GRAVE &kp TIL       &kp TAB    &trans   &trans &kp RBRC
+        &kp LBRC &kp COLON &kp GRAVE &kp TILDE     &kp TAB    &trans   &trans &kp RBRC
                    &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
