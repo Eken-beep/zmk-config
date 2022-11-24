@@ -38,9 +38,9 @@
 
         sym1 {
         bindings = <
-                     &kp AT   &kp SQT  &kp CARET       &kp DLLR &kp MINUS &kp EQUAL
-        &lt SY2 EXCL &kp AMPS &kp HASH &kp STAR        &kp FSLH &kp BSLH  &kp PRCNT &trans
-                         &kp LGUI &mt LSHFT SPACE       &lt NUM DEL &kp RCTRL
+                 &kp AT   &kp SQT  &kp CARET       &kp DLLR &kp MINUS &kp EQUAL
+        &kp EXCL &kp AMPS &kp HASH &kp STAR        &kp FSLH &kp BSLH  &kp PRCNT &trans
+                    &kp LGUI &mt LSHFT SPACE       &lt NUM DEL &kp RCTRL
         >;
         };
 
