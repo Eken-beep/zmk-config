@@ -1,8 +1,8 @@
 /*
  *
- *         &kp S    &kp R   &kp T           &kp N   &kp E   &kp A
- * &kp I   &kp L    &kp G   &kp D           &kp H   &kp U   &kp O &kp C
- *                      &kp A &kp A       &mo 1 &trans
+ *          &kp &kp &kp   &kp &kp &kp 
+ *      &kp &kp &kp &kp   &kp &kp &kp &kp 
+ *              &kp &kp   &kp &kp          
  */
 
 #include <dt-bindings/zmk/keys.h>
@@ -15,6 +15,8 @@
 #define BRC 3
 #define MOD 4
 #define NUM 5
+#define GME 6
+#define NAV 7
 
 / { 
     keymap {
@@ -23,7 +25,7 @@
         alpha1 { 
         bindings = <
                     &lt NUM S &kp R   &kp T           &kp N   &kp E   &lt BRC A 
-        &mt LCTRL I &kp L     &kp G   &kp D           &kp H   &kp U   &kp O &lt SY1 C
+        &mt LCTRL I &lt NAV L &kp G   &kp D           &kp H   &kp U   &kp O &lt SY1 C
                     &kp LGUI  &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
@@ -67,5 +69,19 @@
                 &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
+
+        game {
+        bindings = <
+                  &kp Q    &kp W   &kp E           &kp R   &kp T    &kp Y
+        &kp LCTRL &kp A    &kp S   &kp D           &kp F   &kp G    &kp H &trans
+                    &kp LSHFT &kp SPACE     &kp RET &kp ESC
+        >;
+        };
+
+        keyset {
+        bindings = < 
+            &kp &kp &kp   &kp &kp &kp 
+        &kp &kp &kp &kp   &kp &kp &kp &kp 
+                &kp &kp   &kp &kp   
     };
 };
