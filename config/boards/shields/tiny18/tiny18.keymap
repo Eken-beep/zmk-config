@@ -73,7 +73,7 @@
         game {
         bindings = <
                   &kp Q    &kp W   &kp E           &kp R   &kp T    &kp Y
-        &kp LCTRL &kp A    &kp S   &kp D           &kp F   &kp G    &kp H &kp RCTRL
+        &kp LCTRL &kp A    &kp S   &kp D           &kp F   &kp G    &kp H &tog 0
                     &kp LSHFT &kp SPACE     &kp RET &kp ESC
         >;
         };
