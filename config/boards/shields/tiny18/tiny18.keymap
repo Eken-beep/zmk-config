@@ -32,8 +32,8 @@
 
         alpha2 {
         bindings = <
-                      &kp G    &kp F   &kp B           &kp L   &kp J   &kp K
-        &mt LCTRL DOT &kp COMM &kp Z   &kp Q           &kp M   &kp W &kp V &mt RALT X
+                      &kp G     &kp F   &kp B           &kp L   &kp J   &kp K
+        &mt LCTRL DOT &kp COMMA &kp Z   &kp Q           &kp M   &kp W &kp V &mt RALT X
                         &kp LGUI &mt LSHFT BSPC     &trans    &bt BT_CLR
         >;
         };
