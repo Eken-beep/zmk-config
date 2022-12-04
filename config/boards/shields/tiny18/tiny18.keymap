@@ -24,17 +24,17 @@
 
         alpha1 { 
         bindings = <
-                    &lt NUM S &kp R   &kp T           &kp N   &kp E   &lt BRC A 
-        &mt LCTRL I &lt NAV L &kp G   &kp D           &kp H   &kp U   &lt NAV O &lt SY1 C
+                    &lt NUM O &kp E   &kp U           &kp H   &kp T   &lt BRC N 
+        &mt LCTRL A &lt NAV Y &kp P   &kp I           &kp D   &kp C   &lt NAV R &lt SY1 S
                     &kp LGUI  &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
 
         alpha2 {
         bindings = <
-                    &kp J    &kp P   &kp K           &kp B   &kp DOT   &kp X
-        &mt LCTRL Q &kp V    &kp W   &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
-                      &kp LGUI &mt LSHFT BSPC     &trans    &bt BT_CLR
+                      &kp G    &kp F   &kp B           &kp L   &kp J   &kp K
+        &mt LCTRL DOT &kp COMM &kp Z   &kp Q           &kp M   &kp W &kp V &mt RALT X
+                        &kp LGUI &mt LSHFT BSPC     &trans    &bt BT_CLR
         >;
         };
 
