@@ -26,7 +26,7 @@
         alpha1 { 
         bindings = <
                     &lt NUM S &kp R   &kp T           &kp N   &kp E &lt BRC A 
-        &mt LCTRL I &lt WSP L &kp G   &kp D           &kp H   &lt U &lt NAV O &lt SY1 C
+        &mt LCTRL I &lt WSP L &kp G   &kp D           &kp H   &kp U &lt NAV O &lt SY1 C
                     &kp LGUI  &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
@@ -75,7 +75,7 @@
         bindings = <
                    &trans &kp LG(N2)  &kp LG(N3)      &kp LG(N7) &kp LG(N8)  &kp LG(N9)
         &kp LG(N1) &trans &kp LG(N4)  &kp LG(N5)      &kp LG(N6) &trans      &trans &kp LG(N0)
-                &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
+                       &kp LGUI &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
         >;
         };
 
