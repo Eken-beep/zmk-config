@@ -53,8 +53,8 @@
 
         alpha1 { 
         bindings = <
-                    &lt NUM S &kp R   &kp T           &kp N   &kp E &lt BRC A 
-        &mt LCTRL I &lt WSP L &kp G   &kp D           &kp H   &kp U &lt NAV O &lt SY1 C
+                    &lt NUM S &mt LALT R &kp T           &kp N   &kp E &lt BRC A 
+        &mt LCTRL I &lt WSP L &kp G      &kp D           &kp H   &kp U &lt NAV O &lt SY1 C
                    &kp LGUI  &lss LSHFT SPACE       &mo AL2 &tr MOD RET
         >;
         };
@@ -63,7 +63,7 @@
         bindings = <
                     &kp J   &kp P   &kp K           &kp B   &kp DOT   &kp X
         &mt LCTRL Q &kp V   &kp W   &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
-                       &kp LGUI &mt LSHFT BSPC     &trans    &kp ESC
+                 &mt LGUI ESC &mt LSHFT BSPC     &trans    &kp ESC
         >;
         };
 
@@ -110,16 +110,16 @@
         game {
         bindings = <
                   &kp Q    &kp W   &kp E           &kp R   &kp T    &kp Y
-        &kp LCTRL &kp A    &kp S   &kp D           &kp F   &kp G    &kp H &tog AL1
+        &kp LCTRL &kp A    &kp S   &kp D           &kp F   &kp G    &kp H &to AL1
                     &kp LSHFT &kp SPACE     &kp RET &kp ESC
         >;
         };
 
         keyset {
         bindings = < 
-               &trans &bt BT_SEL 0 &bt BT_SEL 1   &trans &trans &trans 
+               &trans &bt BT_SEL 0 &bt BT_SEL 1   &to GME &trans &trans 
         &trans &trans &trans       &bt BT_CLR     &trans &trans &trans &trans 
-                           &trans &tog GME   &trans &trans   
+                               &trans &trans    &trans &trans   
         >;
         };
     };
