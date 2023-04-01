@@ -19,7 +19,35 @@
 #define GME 7
 #define NAV 8
 
+&lt {
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
+};
+&mt {
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
+};
+
 / { 
+    behaviors {
+        lss: left_shift_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        tr: thumb-layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB-MOD";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,7 +55,7 @@
         bindings = <
                     &lt NUM S &kp R   &kp T           &kp N   &kp E &lt BRC A 
         &mt LCTRL I &lt WSP L &kp G   &kp D           &kp H   &kp U &lt NAV O &lt SY1 C
-                    &kp LGUI  &mt LSHFT SPACE       &lt AL2 RET &lt MOD ESC
+                   &kp LGUI  &lss LSHFT SPACE       &mo AL2 &tr MOD RET
         >;
         };
 
@@ -35,7 +63,7 @@
         bindings = <
                     &kp J   &kp P   &kp K           &kp B   &kp DOT   &kp X
         &mt LCTRL Q &kp V   &kp W   &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
-                       &kp LGUI &mt LSHFT BSPC     &trans    &bt BT_CLR
+                       &kp LGUI &mt LSHFT BSPC     &trans    &kp ESC
         >;
         };
 
