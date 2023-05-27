@@ -85,8 +85,8 @@
         
         mod {
         bindings = <
-                &kp HOME &sk LALT  &kp DEL       &kp LEFT &kp DOWN &kp UP
-        &kp INS &kp END  &kp PG_DN &kp PG_UP     &kp TAB  &trans   &trans &kp RIGHT
+                &kp HOME &sk LALT  &kp DEL       &kp H &kp J &kp K
+        &kp INS &kp END  &kp PG_DN &kp PG_UP     &kp TAB  &trans   &trans &kp L
                    &kp LGUI &mt LSHFT SPACE       &trans &trans
         >;
         };
