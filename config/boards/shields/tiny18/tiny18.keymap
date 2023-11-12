@@ -62,8 +62,8 @@
 
         alpha2 {
         bindings = <
-                    &kp J   &kp P   &kp K           &kp B   &kp DOT   &kp X
-        &mt LCTRL Q &kp V   &kp W   &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
+                    &kp J   &mt LALT P &kp K           &kp B   &kp DOT   &kp X
+        &mt LCTRL Q &kp V   &kp W      &kp M           &kp F   &kp COMMA &kp Z &mt RALT Y
                  &mt LGUI ESC &mt LSHFT BSPC     &trans    &kp ESC
         >;
         };
