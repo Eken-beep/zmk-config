@@ -110,7 +110,7 @@
 
         game {
         bindings = <
-              &kp S    &kp R   &lt GM2 T       &kp N   &kp E    &mo GM2
+              &kp S    &kp R   &lt GM2 T       &kp N   &kp E    &kp A
         &kp I &kp L    &kp G   &kp D           &kp H   &kp U    &kp O &to AL1
                     &kp LSHFT &kp SPACE     &lt NUM RET &kp LCTRL
         >;
